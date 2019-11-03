@@ -1,0 +1,22 @@
+#!bin/bash 
+lineal () {
+typeset a 
+typeset b 
+typeset c 
+typeset x 
+typeset y  
+a=$1; b=$2; c=$3
+echo "ax+b=c"
+echo "Enter a"
+read a 
+echo "Enter b"
+read b
+echo "Enter c"
+read c 
+let y=c-b
+echo "ax="$y
+let x=y/a 
+echo "x="$x
+
+}
+lineal $a 
